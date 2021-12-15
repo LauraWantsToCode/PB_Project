@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  max-height: 100vh; /* this keeps the screen to screen-size, no scrolling */
+  overflow: none; 
+  }
+
+body {
+  border: 5%;
+  background-image: linear-gradient(to right, rgb(241, 241, 225), #00d4ff);
+  display: flex; 
+  flex-wrap: wrap;
+  overflow: hidden; /* prevents the page from being scrollable */
+  /* justify-content: space-evenly; */
+}
+
+nav {
+height: 100vh;
+width: 20vw;
+}
+
+main {
+  height: 100vh;
+  width: 80vw;
+}
+
+div {
+  float: left;
+}
+
+.TopPanel {
+  height: 30vh;
+  width: 80vw;
+  display: flex; 
+  flex-wrap: wrap;
+  
+}
+
+.TopPanel #Topleft{
+  height: 30vh; 
+  width: 45vw; 
+}
+
+#Topleft h1 {
+  height: 8vh;
+  width: 45vw; 
+  color: rgb(37, 24, 153); 
+  margin-top: 2vh; 
+  margin-left: 1vw;
+}
+
+#Topleft form {
+  height: 17vh;
+  width: 45vw; 
+  color: rgb(37, 24, 153); 
+  font-size: 20px;
+  }
+
+
+.TopPanel #TripInfo {
+  height: 29vh; 
+  width: 30vw; 
+  margin-top: 1vh;
+  color: rgb(37, 24, 153); 
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  position: sticky;
+ }
+
+.TopPanel #TripInfo img {
+  background-size: cover;
+  height: 29vh; 
+  width: 30vw; 
+  opacity: 90%;
+  box-shadow: 3px 3px 8px 8px #43afc5;
+}
+
+main .MainText{
+  width: 80vw;
+  height: 70vh;
+  margin-top: 2vh; 
+  }
+
+
+
+.globe{
+  margin-top: 10vh;
+  width: 15vw;
+  border: none;
+  }
+
+
+.panel {
+margin-left: 2vw;
+margin-top: 0vh;
+
+}
+
+.panel button{
+  height: 5vh; 
+  width: 14vw; 
+  font-size: 14px;
+  background-color: rgb(28, 178, 224);
+  padding: 1px rgb(8, 11, 236);
+  text-align: center;
+  border-radius: 40%;
+  transition: all ease-in-out 0.4s;
+  cursor: pointer;
+}
+
+
+
+.panel button:hover {
+  background-color: rgb(89, 48, 238); 
+}
+
+/*
+I have initially set it up with a class tooltip within HTML, but the below text was appearing next to the button rather than below. 
+.tooltip {
+  position: relative;
+  display: inline-block;
+
+  }
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(22, 233, 110);
+  color: rgb(66, 66, 199);
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+*/
+
+#hovertext {
+  height: 10vh; 
+  width: 14vw; 
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+  }
+
+#FakeButton {
+margin: 1vw; 
+  height: 60px;
+  width: 170px; 
+  background-color: rgb(42, 216, 201);
+  text-align: center;
+  border-radius: 0%;
+  position: absolute; /* no longer constrained to its relative container - can position anywhere within container*/
+  top: 0px;
+  left: 0px;
+}
+
+
+
+
