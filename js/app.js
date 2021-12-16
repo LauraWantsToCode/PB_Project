@@ -44,3 +44,4 @@ document.getElementById("TripInfo").innerHTML=`Hello, ${name}.  You would like t
 e.preventDefault(); // e is required for the page to not refresh (default behaviour)
 }
 
+

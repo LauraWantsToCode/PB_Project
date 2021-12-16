@@ -159,5 +159,8 @@ margin: 1vw;
 }
 
 
-
-
+.MainText img{
+  width: 50%;
+  height: 50%;
+  margin-top: 2vh; 
+}
