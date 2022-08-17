@@ -12,6 +12,7 @@ body {
   flex-wrap: wrap;
   overflow: hidden; /* prevents the page from being scrollable */
   /* justify-content: space-evenly; */
+  min-width:380px
 }
 
 nav {
@@ -21,72 +22,93 @@ width: 20vw;
 
 main {
   height: 100vh;
-  width: 80vw;
+  width: 70vw;
 }
 
 div {
   float: left;
 }
 
+#hovertext {
+
+  font-size: 12px;
+  text-align: center;
+  }
+
+#FakeButton {
+margin: 1vw; 
+  height: 60px;
+  width: 15vw;
+  min-width: 100px;
+  background-color: rgb(42, 216, 201);
+  text-align: center;
+  border-radius: 0%;
+  position: absolute; /* no longer constrained to its relative container - can position anywhere within container*/
+  top: 0px;
+  left: 0px;
+}
+
+
+
 .TopPanel {
-  height: 30vh;
-  width: 80vw;
+  height: 110px;
+  width: 70vw;
   display: flex; 
   flex-wrap: wrap;
-  
 }
 
-.TopPanel #Topleft{
-  height: 30vh; 
-  width: 45vw; 
+.TopPanel #Topform{
+  /* height: 30vh; 
+  width: 45vw;  */
 }
 
-#Topleft h1 {
-  height: 8vh;
-  width: 45vw; 
+#Topform h1 {
+  height: 30px;
   color: rgb(37, 24, 153); 
   margin-top: 2vh; 
   margin-left: 1vw;
 }
 
-#Topleft form {
-  height: 17vh;
-  width: 45vw; 
+#Topform form {
+  /* height: 17vh; */
   color: rgb(37, 24, 153); 
   font-size: 20px;
+  margin-left: 1vw;
   }
 
 
-.TopPanel #TripInfo {
-  height: 29vh; 
-  width: 30vw; 
+#TripInfo {
+  height: 50px; 
   margin-top: 1vh;
   color: rgb(37, 24, 153); 
-  font-size: 36px;
+  font-size: 25px;
   font-weight: bold;
   text-align: center;
   position: sticky;
  }
 
-.TopPanel #TripInfo img {
+/* .TopPanel #TripInfo img {
   background-size: cover;
-  height: 29vh; 
-  width: 30vw; 
+  height: 150vh; 
+  width: 50vw; 
   opacity: 90%;
   box-shadow: 3px 3px 8px 8px #43afc5;
-}
+} */
+
+
 
 main .MainText{
-  width: 80vw;
-  height: 70vh;
-  margin-top: 2vh; 
+  width: 70vw;
+  margin: 2vh; 
   }
 
 
 
 .globe{
+  margin: 1vw; 
   margin-top: 10vh;
   width: 15vw;
+  min-width: 100px;
   border: none;
   }
 
@@ -98,13 +120,14 @@ margin-top: 0vh;
 }
 
 .panel button{
-  height: 5vh; 
+  height: 7vh; 
   width: 14vw; 
-  font-size: 14px;
-  background-color: rgb(28, 178, 224);
+  min-width: 100px;
+  font-size: 12px;
+  background-color: rgb(242, 243, 222);
   padding: 1px rgb(8, 11, 236);
   text-align: center;
-  border-radius: 40%;
+  /* border-radius: 40%; */
   transition: all ease-in-out 0.4s;
   cursor: pointer;
 }
@@ -138,29 +161,39 @@ I have initially set it up with a class tooltip within HTML, but the below text 
 }
 */
 
-#hovertext {
-  height: 10vh; 
-  width: 14vw; 
-  padding: 5px;
-  font-size: 18px;
-  text-align: center;
-  }
-
-#FakeButton {
-margin: 1vw; 
-  height: 60px;
-  width: 170px; 
-  background-color: rgb(42, 216, 201);
-  text-align: center;
-  border-radius: 0%;
-  position: absolute; /* no longer constrained to its relative container - can position anywhere within container*/
-  top: 0px;
-  left: 0px;
-}
 
 
 .MainText img{
-  width: 50%;
-  height: 50%;
+  width: 95%;
   margin-top: 2vh; 
+
+}
+
+
+
+@media screen and (min-width:380px) and (max-width:599px) {
+
+
+  .TopPanel {
+    margin-left: 40px;
+  }
+
+  main .MainText{
+    margin-left: 40px;
+    }
+  
+    #Topform h1 {
+    font-size: x-large;
+    height: 5vh;
+    }
+
+    #TripInfo {
+      font-size: 20px;
+     }
+    
+     #Topform form {
+      font-size: 18px;
+      }
+    
+
 }
