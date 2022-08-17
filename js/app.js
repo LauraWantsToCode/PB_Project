@@ -18,7 +18,6 @@
      document.getElementById("hovertext").innerHTML="Click on this button to find out what you will have to do in regards to Covid restrictions on your return";
  }
 
-
  function Hide1() {
      document.getElementById("hovertext").innerHTML=" ";
  }
