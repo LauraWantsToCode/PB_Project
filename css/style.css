@@ -51,7 +51,7 @@ margin: 1vw;
 
 
 .TopPanel {
-  height: 110px;
+  height: 170px;
   width: 70vw;
   display: flex; 
   flex-wrap: wrap;
@@ -79,12 +79,13 @@ margin: 1vw;
 
 #TripInfo {
   height: 50px; 
-  margin-top: 1vh;
+  margin-top: 2vh;
   color: rgb(37, 24, 153); 
   font-size: 25px;
   font-weight: bold;
   text-align: center;
   position: sticky;
+
  }
 
 /* .TopPanel #TripInfo img {
